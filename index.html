@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIUX 디자인 및 구현</title>
+</head>
+<body>
+
+  <script>
+    function gugudan(){
+      let userInput = Number(prompt("원하는 단을 입력하세요"));
+      if(userInput >=2 && userInput <=9){
+        console.log("성공");
+        document.write(`<h1>${userInput}단</h1>`);
+        for(let i=1; i<=9; i++){
+          document.write(`<div>${userInput} X ${i} = ${userInput*i}</div>`);
+        }
+      }else{
+        console.log("입력오류");
+        alert("구구단에 들어가는 수가 아닙니다");
+      }
+    }
+    gugudan();
+  </script>
+</body>
+</html>
